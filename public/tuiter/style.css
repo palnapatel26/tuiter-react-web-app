@@ -1,0 +1,8 @@
+body {
+    background-color: black;
+    color: white;
+    position: absolute;
+    margin-left: 16px;
+    font-family: "Helvetica Neue";
+    border: 1px solid #2f3336;
+}
