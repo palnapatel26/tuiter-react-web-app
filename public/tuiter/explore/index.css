@@ -1,60 +1,36 @@
 body {
-    background-color: black;
-    color: white;
-    position: absolute;
-    margin-left: 16px;
-    font-family: "Helvetica Neue";
-    border: 1px solid #2f3336;
+    background: black;
+    margin-top: 20px;
 }
 
 
+.wd-col-background {
+    border-radius: 15px;
+    background-color: #2C2B2B;
+}
+
 .wd-search-bar {
-    position: relative;
     border-radius: 16px;
     border-color: #2F3336;
     background-color: #2F3336;
     color: white;
     border-width: 1px;
-    background-image: url(https://cdn2.hubspot.net/hubfs/4004166/bioticresearch_website_assets/images/search_icon.png);
-    background-repeat: no-repeat;
     text-indent: 20px;
     padding: 12px 20px 12px 40px;
-    float: left;
-    width: 80%;
-    display: inline-block;
 }
 
-.wd-border-right {
-    margin-right: 12px;
-    float: right;
-    display: inline-block;
+.wd-gear-icon {
+    position: relative;
+    top: 12px;
+    color: #1DA1F2;
 }
 
 .wd-navigation-bar {
-    list-style-type: none;
-    overflow: hidden;
-    background-color: black;
     color: #767D6E;
     font-weight: bold;
     font-size: 15px;
     padding: 16px;
     float: left;
-}
-li {
-    float: left;
-}
-
-li a {
-    display: block;
-    color: #767D6E;
-    text-align: center;
-    padding: 16px;
-    text-decoration: none;
-}
-
-li a:hover:not(.wd-active) {
-    background-color: #111;
-    color: #1DA1F2;
 }
 
 .wd-active {
@@ -62,37 +38,80 @@ li a:hover:not(.wd-active) {
     border-bottom: 3px solid #1DA1F2;
 }
 
-.wd-topic {
-    font-size: 13px;
-    color: #6E767D;
-}
-
-.wd-title {
-    font-size: 16px;
-    font-weight: bold;
-    align: center;
-}
-
-.wd-tweet-border {
-    width:100%;
-    height: 50px;
-    border-bottom: 1px solid rgba(255,255,255,.25);
-}
-
 .wd-image {
     width: 100px;
     height: 100px;
     float: right;
-    margin-right: 16px;
     border-radius: 25px;
-    display: inline;
-
+    vertical-align: center;
 }
 
 .wd-author {
     color:white;
     font-size: 10px;
+
+}
+
+.wd-title {
+    font-size: 16px;
+    font-weight: bold;
+    color: lightgray;
+
+}
+
+.wd-topic {
+    font-size: 13px;
+    color: #6E767D;
+
+}
+.wd-tweet-border {
+    border-bottom: 1px solid rgba(255,255,255,.25);
+    padding-top: 6px;
+    padding-bottom: 6px;
+}
+
+.wd-col-border {
+    border: 1px solid rgba(255,255,255,.25);
+}
+
+.wd-vertical-navbar {
+    color: white;
+    font-size: 20px;
+    padding: 10px;
+
 }
 
 
+.wd-vertical-navbar-active {
+    color: white;
+    font-size: 20px;
+    background: #1DA1F2;
+    padding: 10px;
+}
 
+.wd-button {
+    border-radius: 16px;
+    background: #1DA1F2;
+    color: white;
+    font-size: 12px;
+    text-align: center;
+}
+
+.wd-tweet-button {
+    border-radius: 16px;
+    background: #1DA1F2;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+}
+
+.wd-image-2 {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+}
+
+.wd-center {
+    display:flex;
+    align-items: center;
+}

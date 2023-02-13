@@ -1,75 +1,180 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link href="./public/tuiter/style.css"
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+          rel="stylesheet"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
           rel="stylesheet"/>
     <link href="index.css"
           rel="stylesheet"/>
 </head>
 <body>
 
-<div>
-    <form id="search">
-        <input class="wd-search-bar" id="text-fields-username" placeholder="Search Tuiter"/>
-        <a href="explore-settings.html"><img width="40px" class="wd-border-right"
-                                    src="https://upload.wikimedia.org/wikipedia/commons/f/f8/Gear-icon-blue.png"/></a>
-    </form>
+<div class="container">
+    <div class="row">
+        <div class="col-xl-2 col-lg-1 col-sm-2">
+            <nav class="nav flex-column">
+                <a class="nav-link wd-vertical-navbar" href="#"><i class="fab fa-twitter fa-1x"></i></a>
+                <a class="nav-link wd-vertical-navbar" href="#"><i class="fa fa-home fa-1x"></i><span class="d-xl-inline d-sm-none"> Home</span></a>
+                <a class="nav-link wd-vertical-navbar-active" href="#"><i class="fa fa-hashtag fa-1x"></i><span class="d-xl-inline d-sm-none"> Explore</span></a>
+                <a class="nav-link wd-vertical-navbar" href="#"><i class="fa fa-bell fa-1x"></i><span class="d-xl-inline d-sm-none"> Notifications</span></a>
+                <a class="nav-link wd-vertical-navbar" href="#"><i class="fa fa-envelope"></i><span class="d-xl-inline d-sm-none"> Messages</span></a>
+                <a class="nav-link wd-vertical-navbar" href="#"><i class="fas fa-bookmark fa-1x"></i><span class="d-xl-inline d-sm-none"> Bookmarks</span></a>
+                <a class="nav-link wd-vertical-navbar" href="#"><i class="fas fa-list fa-1x"></i><span class="d-xl-inline d-sm-none"> Lists</span></a>
+                <a class="nav-link wd-vertical-navbar" href="#"><i class="fas fa-user fa-1x"></i><span class="d-xl-inline d-sm-none"> Profiles</span></a>
+                <a class="nav-link wd-vertical-navbar" href="#"><i class="fas fa fa-ellipsis-h 1x"></i><span class="d-xl-inline d-sm-none"> More</span></a>
+                <button class="btn btn-block wd-tweet-button">Tweet</button>
+            </nav>
+        </div>
+
+        <div class="col-xl-7 col-lg-8 col-sm-10 wd-col-border">
+
+            <div class="row">
+                <div class="col-11">
+                    <form>
+                        <div class="form-group">
+                            <input class="form-control wd-search-bar" placeholder="Search Tuiter"/>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-1">
+                    <a href="explore-settings.html"> <i class="fa fa-cog fa-2x wd-gear-icon"></i></a>
+                </div>
+            </div>
+
+            <div class="row">
+                <nav class="navbar">
+                    <a class="nav-item nav-link wd-active" href="#">For you</a>
+                    <a class="nav-item nav-link wd-navigation-bar" href="#">Trending</a>
+                    <a class="nav-item nav-link wd-navigation-bar" href="#">COVID-19</a>
+                    <a class="nav-item nav-link wd-navigation-bar" href="#">News</a>
+                    <a class="nav-item nav-link wd-navigation-bar d-sm-none d-md-block" href="#">Sports</a>
+                    <a class="nav-item nav-link wd-navigation-bar d-sm-none d-lg-block" href="#">Entertainment</a>
+                </nav>
+            </div>
+
+            <div class="row wd-tweet-border">
+                <img src="https://media.istockphoto.com/id/1131418344/photo/space-shuttle-in-the-rays-of-sun.jpg?s=612x612&w=0&k=20&c=sWDbIkxaV4-0Ou8cgUJa6a06bcF78hkJ5GvL8WZmJr4=">
+
+            </div>
+
+
+            <div class="row wd-tweet-border">
+                <div class="col-10">
+                    <h1 class="wd-topic">COVID-19 | Live</h1>
+                    <h1 class="wd-title">COVID-19: News and updates in Washington</h1>
+                </div>
+                <div class="col-2">
+                    <img class="wd-image" src="https://coronavirus.jhu.edu/images/assets/Virus_Photo_acd51dc7a9.jpg">
+                </div>
+            </div>
+
+            <div class="row wd-tweet-border">
+                <div class="col-10">
+                    <i class="fas fa-check-circle wd-author"> The New York Times</i>
+                    <h1 class="wd-title">Cucuo news anchor brother in trouble</h1>
+                </div>
+                <div class="col-2">
+                    <img class="wd-image" src="https://www.usnews.com/object/image/00000178-2272-d11d-a57a-7a7edce90000/210311-editorial.jpg?update-time=1615486639043&size=responsive640">
+                </div>
+            </div>
+
+            <div class="row wd-tweet-border">
+                <div class="col-10">
+                    <i class="fas fa-check-circle wd-author"> The Golden Globe</i>
+                    <h1 class="wd-title">Japanese Yen Hits a New Low</h1>
+                </div>
+                <div class="col-2">
+                    <img class="wd-image" src="https://www.kcpinternational.com/wp-content/uploads/2014/01/Japan-Flag-and-cherry-blossoms.jpg">
+                </div>
+            </div>
+
+            <div class="row wd-tweet-border">
+                <div class="col-10">
+                    <h1 class="wd-topic">Education & Careers</h1></br>
+                    <h1 class="wd-title">Over 12,000 High Schools in the US Add Coding to Curriculum</h1>
+                </div>
+                <div class="col-2">
+                    <img class="wd-image" src="https://www.thoughtco.com/thmb/094YF3bQBiuV_13n92GFQZWkM7k=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/JavaScript-58acbb8a3df78c345bad32c2.jpg">
+                </div>
+            </div>
+
+        </div>
+
+        <div class="col-lg-3 d-sm-none d-lg-block px-md-4 wd-col-background">
+            <div class="row wd-tweet-border">
+                <h1 class="wd-title"> Who to follow</h1>
+            </div>
+
+            <div class="row wd-tweet-border">
+                <div class="col-2">
+                    <img class="wd-image-2" src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://coursera-course-photos.s3.amazonaws.com/0a/8cd7f1b14344618b75142593bc7af8/JavaCupLogo800x800.png?auto=format%2Ccompress&dpr=1">
+                </div>
+                <div class="col-7">
+                    <span class="wd-author"> JAVA<i class="fas fa-check-circle wd-author"></i></span>
+                    <h1 class="wd-topic">@Java</h1>
+                </div>
+                <div class="col-3 wd-center">
+                    <button class="btn btn-block wd-button">Follow</button>
+                </div>
+            </div>
+
+            <div class="row wd-tweet-border">
+                <div class="col-2">
+                    <img class="wd-image-2" src="https://res.cloudinary.com/crunchbase-production/image/upload/c_lpad,f_auto,q_auto:eco,dpr_1/j3dbh6kok0dket3uz2vy">
+                </div>
+                <div class="col-7">
+                    <span class="wd-author"> Relativity Space<i class="fas fa-check-circle wd-author"></i></span>
+                    <h1 class="wd-topic">@relativityspace</h1>
+                </div>
+                <div class="col-3 wd-center">
+                    <button class="btn btn-block wd-button">Follow</button>
+                </div>
+            </div>
+
+            <div class="row wd-tweet-border">
+                <div class="col-2">
+                    <img class="wd-image-2" src="https://upload.wikimedia.org/wikipedia/commons/e/e8/Tesla_logo.png">
+                </div>
+                <div class="col-7">
+                    <span class="wd-author">Tesla<i class="fas fa-check-circle wd-author"></i></span>
+                    <h1 class="wd-topic">@Tesla</h1>
+                </div>
+                <div class="col-3 wd-center">
+                    <button class="btn btn-block wd-button">Follow</button>
+                </div>
+            </div>
+
+            <div class="row wd-tweet-border">
+                <div class="col-2">
+                    <img class="wd-image-2" src="data:image/jpeg;base64,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">
+                </div>
+                <div class="col-7">
+                    <span class="wd-author">Virgin Galactic<i class="fas fa-check-circle wd-author"></i></span>
+                    <h1 class="wd-topic">@virgingalactic</h1>
+                </div>
+                <div class="col-3 wd-center">
+                    <button class="btn btn-block wd-button">Follow</button>
+                </div>
+            </div>
+
+            <div class="row wd-tweet-border">
+                <div class="col-2">
+                    <img class="wd-image-2" src="data:image/png;base64,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">
+                </div>
+                <div class="col-7">
+                    <span class="wd-author">NASA<i class="fas fa-check-circle wd-author"></i></span>
+                    <h1 class="wd-topic">@NASA</h1>
+                </div>
+                <div class="col-3 wd-center">
+                    <button class="btn btn-block wd-button">Follow</button>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
 </div>
-
-<div>
-<ul class="wd-navigation-bar">
-    <li><a class="wd-active" href="#">For you</a></li>
-    <li><a href="#">Trending</a></li>
-    <li><a href="#">COVID-19</a></li>
-    <li><a href="#">News</a></li>
-    <li><a href="#">Sports</a></li>
-    <li><a href="#">Entertainment</a></li>
-</ul>
-</div>
-<div class="wd-tweet-border"></div>
-<img class="wd-image" src="https://www.usnews.com/object/image/00000178-2272-d11d-a57a-7a7edce90000/210311-editorial.jpg?update-time=1615486639043&size=responsive640">
-<div>
-    <h1 class="wd-author">The New York Times</h1>
-    <h1 class="wd-title">CNN's Cuomo conundrum: A star anchor with a brother in trouble</h1>
-
-</div></br>
-<div class="wd-tweet-border"></div>
-<div>
-    <h1 class="wd-topic">Trending in Science</h1>
-    <h1 class="wd-title">Starship</h1>
-    <h1 class="wd-topic">55.5K Tweets</h1>
-</div></br>
-<div class="wd-tweet-border"></div>
-<div>
-    <h1 class="wd-topic">Sports | Trending</h1>
-    <h1 class="wd-title">Joe Rogan</h1>
-    <h1 class="wd-topic">5,218 Tweets</h1>
-</div></br>
-<div class="wd-tweet-border"></div>
-<img class="wd-image" src="https://coronavirus.jhu.edu/images/assets/Virus_Photo_acd51dc7a9.jpg">
-<div>
-    <h1 class="wd-topic">COVID-19 | Live</h1>
-    <h1 class="wd-title">COVID-19: News and updates in Washington</h1>
-
-</div></br>
-<div class="wd-tweet-border"></div>
-<div>
-    <h1 class="wd-topic">Trending in the United States</h1>
-    <h1 class="wd-title">Wonder Bread</h1>
-    <h1 class="wd-topic">1,666 Tweets</h1>
-</div></br>
-<div class="wd-tweet-border"></div>
-<img class="wd-image" src="https://www.kcpinternational.com/wp-content/uploads/2014/01/Japan-Flag-and-cherry-blossoms.jpg">
-<div>
-    <h1 class="wd-author">The Golden Globe</h1>
-    <h1 class="wd-title">Japanese Yen hits a new low</h1>
-
-</div></br>
-
-
-
-
-
 </body>
 
 </html>
