@@ -6,7 +6,7 @@ const NavigationSidebar = (highlight = 'Home') => {
        <i class="fab fa-twitter"></i></a>
      <a class="list-group-item" href="#">
        <i class="fa fa-home fa-1x"></i> Home</a>
-     <a class="list-group-item active" href="../explore/index.html">
+     <a class="list-group-item active" href="../exploreOld/index.html">
        <i class="fa fa-hashtag fa-1x"></i> Explore</a>
      <a class="list-group-item"" href="#">
        <i class="fa fa-bell fa-1x"></i> Notifications</a>
