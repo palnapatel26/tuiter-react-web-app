@@ -33,7 +33,7 @@ const NavigationSidebar = () => {
                     ${active === 'lists'?'active':''}`}>
                 <i className="fa fa-list fa-1x"></i> Lists
             </Link>
-            <Link to="#" className={`list-group-item
+            <Link to="/tuiter/profile" className={`list-group-item
                     ${active === 'profile'?'active':''}`}>
                 <i className="fa fa-user fa-1x"></i> Profile
             </Link>

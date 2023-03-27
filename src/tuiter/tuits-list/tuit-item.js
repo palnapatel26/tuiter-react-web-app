@@ -1,7 +1,9 @@
 import React from "react";
-const PostItem = (
+import {useDispatch} from "react-redux";
+import {deleteTuit} from "../tuits/tuits-reducer";
+const TuitItem = (
     {
-        post = {
+        post: tuit = {
             "userName": "New York Post",
             "handle": "nypost",
             "time": "23h",
@@ -14,15 +16,24 @@ const PostItem = (
         }
     }
 ) => {
+    const liked = tuit.liked ? "red":" ";
+    const heartIcon = tuit.liked? 'fa-heart':'fa-heart-o';
+    const dispatch = useDispatch();
+    const deleteTuitHandler = (id) => {
+        dispatch(deleteTuit(id));
+
+    }
     return (
         <li className="list-group-item">
             <div className="row align-items-center">
                 <div className="col-1">
-                    <img className="rounded-circle" height={48} src={`/images/${post.avatarIcon}`}/>
+                    <img className="rounded-circle" height={48} src={`/images/${tuit.image}`}/>
                 </div>
                 <div className="col-11">
-                    <div>{post.userName} <i className="fa fa-check-circle fa-1x"></i> {post.handle} - {post.time}</div>
-                    <div>{post.title}</div>
+                    <div><b>{tuit.userName}</b> <i className="fa fa-check-circle fa-1x text-primary"></i> {tuit.handle} - {tuit.time}
+                        <i className="bi bi-x-lg float-end"
+                           onClick={() => deleteTuitHandler(tuit._id)}></i>
+                    </div>
                 </div>
             </div>
             <div className="row align-items-center">
@@ -30,7 +41,7 @@ const PostItem = (
 
                 </div>
                 <div className="col-11">
-                    <img className="w-100 rounded-3" src={`/images/${post.image}`}/>
+                    <div>{tuit.tuit}</div>
                 </div>
             </div>
             <div className="row align-items-center">
@@ -40,13 +51,13 @@ const PostItem = (
                 <div className="col-11">
                     <div className="row">
                         <div className="col">
-                            <i className="fa fa-heart"> {post.likes}</i>
+                            <i className={`fa ${heartIcon}`} style={{color: liked}}></i> {tuit.likes}
                         </div>
                         <div className="col">
-                            <i className="fa fa-reply"> {post.reposts}</i>
+                            <i className="fa fa-reply"> {tuit.reposts}</i>
                         </div>
                         <div className="col">
-                            <i className="fa fa-comment"> {post.comments}</i>
+                            <i className="fa fa-comment-o"> {tuit.comments}</i>
                         </div>
                         <div className="col">
                             <i className="fa fa-save"></i>
@@ -58,4 +69,4 @@ const PostItem = (
     );
 };
 
-export default PostItem;
+export default TuitItem;

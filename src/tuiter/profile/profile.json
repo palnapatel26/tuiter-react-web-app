@@ -1,0 +1,14 @@
+{
+    "firstName": "Palna",
+    "lastName": "Patel",
+    "handle": "@palnapatel26",
+    "profilePicture": "../images/nypost.png",
+    "bannerPicture": "../images/sahara.jpg",
+    "bio": "Student. Incoming software dev at aws. Former Business Analyst at IBM. Loves everything cloud.",
+    "website": "youtube.com/webdevtv",
+    "location": "Seattle, WA",
+    "dateOfBirth": "01/26/1998",
+    "dateJoined": "4/2009",
+    "followingCount": 340,
+    "followersCount": 223
+}
