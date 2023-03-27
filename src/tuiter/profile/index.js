@@ -1,6 +1,7 @@
 import React from "react";
 import "./index.css";
 import {useSelector} from "react-redux";
+// updated
 const ProfileComponent = () => {
     const profile = useSelector(state => state.profile);
     console.log(profile);

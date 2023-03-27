@@ -1,6 +1,7 @@
 import React from "react";
 import TuitList from "../tuits-list";
 import WhatsHappening from "./whats-happening";
+// updated
 
 const HomeComponent = () => {
     return(

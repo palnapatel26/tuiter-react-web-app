@@ -1,4 +1,5 @@
 import React from "react";
+// updated
 import ExploreComponent from "./explore";
 import NavigationSidebar from "./navigation-sidebar";
 import WhoToFollowList from "./who-to-follow-list";

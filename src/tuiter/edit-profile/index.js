@@ -3,6 +3,7 @@ import {useSelector} from "react-redux";
 import {updateProfile} from "../profile/profile-reducer";
 import { useNavigate } from "react-router-dom";
 import {useDispatch} from "react-redux";
+// updated
 
 const EditProfile = () => {
     const defaultProfile = useSelector(state => state.profile)
