@@ -25,11 +25,11 @@ const TuitStats = (
             </div>
 
             <div className="col">
-                <i className="fa fa-reply"> {tuit.reposts}</i>
+                <i className="fa fa-reply"> {tuit.retuits}</i>
             </div>
 
             <div className="col">
-                <i className="fa fa-comment-o"> {tuit.comments}</i>
+                <i className="fa fa-comment-o"> {tuit.replies}</i>
             </div>
 
             <div className="col">
